@@ -156,7 +156,7 @@ config/: Contains configuration files for application services and database conn
 
 ---
 
-## Screenshots
+## 9 Screenshots
 
 ### Home Page
 ![Home Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203118.png?raw=true)
