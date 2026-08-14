@@ -156,70 +156,52 @@ config/: Contains configuration files for application services and database conn
 
 ---
 
-# 9. Screenshots
+## 9 screenshots
 
 ### Screenshot 1
 **Home Page**
 
-Displays the landing page with the hero section and company highlights.
-
-![Home Page](<screenshots/Screenshot 2026-08-14 203118.jpg>)
+![Home Page](screenshots/Screenshot%202026-08-14%20203118.png)
 
 ### Screenshot 2
 **About Page**
 
-Shows the company's history, mission, and vision.
-
-![About Page](<screenshots/Screenshot 2026-08-14 203139.png>)
+![About Page](screenshots/Screenshot%202026-08-14%20203139.png)
 
 ### Screenshot 3
 **Services Page**
 
-Displays the services provided by the company.
-
-![Services Page](<screenshots/Screenshot 2026-08-14 203149.png>)
+![Services Page](screenshots/Screenshot%202026-08-14%20203149.png)
 
 ### Screenshot 4
 **Contact Page**
 
-Shows the contact form and company contact information.
-
-![Contact Page](<screenshots/Screenshot 2026-08-14 203158.png>)
+![Contact Page](screenshots/Screenshot%202026-08-14%20203158.png)
 
 ### Screenshot 5
 **Navigation Bar**
 
-Reusable navigation component shared across all pages.
-
-![Navigation Bar](<screenshots/Screenshot 2026-08-14 204309.png>)
+![Navigation Bar](screenshots/Screenshot%202026-08-14%20204309.png)
 
 ### Screenshot 6
 **Footer Component**
 
-Reusable footer containing company information and social links.
-
-![Footer Component](<screenshots/Screenshot 2026-08-14 204349.png>)
+![Footer Component](screenshots/Screenshot%202026-08-14%20204349.png)
 
 ### Screenshot 7
 **Route Definitions**
 
-Shows the routing configuration inside `routes/web.php`.
-
-![Route Definitions](<screenshots/Screenshot 2026-08-14 204632.png>)
+![Route Definitions](screenshots/Screenshot%202026-08-14%20204632.png)
 
 ### Screenshot 8
 **Controller Implementation**
 
-Shows the implementation of `CompanyController.php`.
-
-![Controller Implementation](<screenshots/Screenshot 2026-08-14 205004.png>)
+![Controller Implementation](screenshots/Screenshot%202026-08-14%20205004.png)
 
 ### Screenshot 9
 **Blade Views Structure**
 
-Displays the organization of files inside `resources/views/pages/`.
-
-![Blade Views Structure](<screenshots/Screenshot 2026-08-14 204533.png>)
+![Blade Views Structure](screenshots/Screenshot%202026-08-14%20204533.png)
 
 ---
 
