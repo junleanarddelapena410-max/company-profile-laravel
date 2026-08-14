@@ -155,41 +155,16 @@ bootstrap/: Contains framework bootstrap files and cache configuration.
 config/: Contains configuration files for application services and database connections.
 
 ---
-### Screenshot 1
-**Home Page**
-![Home Page](screenshots/Screenshot%202026-08-14%20203118.png)
-
-### Screenshot 2
-**About Page**
-![About Page](screenshots/Screenshot%202026-08-14%20203139.png)
-
-### Screenshot 3
-**Services Page**
-![Services Page](screenshots/Screenshot%202026-08-14%20203149.png)
-
-### Screenshot 4
-**Contact Page**
-![Contact Page](screenshots/Screenshot%202026-08-14%20203158.png)
-
-### Screenshot 5
-**Navigation Bar**
-![Navigation Bar](screenshots/Screenshot%202026-08-14%20204309.png)
-
-### Screenshot 6
-**Footer Component**
-![Footer Component](screenshots/Screenshot%202026-08-14%20204349.png)
-
-### Screenshot 7
-**Route Definitions**
-![Route Definitions](screenshots/Screenshot%202026-08-14%20204632.png)
-
-### Screenshot 8
-**Controller Implementation**
-![Controller Implementation](screenshots/Screenshot%202026-08-14%20205004.png)
-
-### Screenshot 9
-**Blade Views Structure**
-![Blade Views Structure](screenshots/Screenshot%202026-08-14%20204533.png)
+![Home Page](screenshots/home.png)
+![About Page](screenshots/about.png)
+![Services Page](screenshots/services.png)
+![Contact Page](screenshots/contact.png)
+![Navigation Bar](screenshots/navigation bar.png)
+![Footer](screenshots/footer/.png)
+![Route](screenshots/route.png)
+![Controller](screenshots/controller.png)
+![Navigation Bar](screenshots/navigation bar.png)
+![Layout](screenshots/layout.png)
 ---
 
 10. Problems Encountered
