@@ -159,11 +159,10 @@ config/: Contains configuration files for application services and database conn
 ![About Page](screenshots/about.png)
 ![Services Page](screenshots/services.png)
 ![Contact Page](screenshots/contact.png)
-![Navigation Bar](screenshots/navigation bar.png)
+![Navigation Bar](screenshots/navigation%20bar.png)
 ![Footer](screenshots/footer.png)
 ![Route](screenshots/route.png)
 ![Controller](screenshots/controller.png)
-![Navigation Bar](screenshots/navigation bar.png)
 ![Layout](screenshots/layout.png)
 ---
 
