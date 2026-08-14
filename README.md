@@ -77,55 +77,49 @@ Route::get('/', [CompanyController::class, 'home'])->name('home');
 Route::get('/about', [CompanyController::class, 'about'])->name('about');
 Route::get('/services', [CompanyController::class, 'services'])->name('services');
 Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
+```
+
 ---
 
-6. Controllers
-Purpose of Controllers
+## 6. Controllers
+
+### Purpose of Controllers
 Controllers process incoming requests, execute the required application logic, and return the appropriate Blade view to the user. This keeps routing files clean and organizes application logic into reusable classes.
 
-Controller Methods
-Inside app/Http/Controllers/CompanyController.php:
+### Controller Methods
+Inside `app/Http/Controllers/CompanyController.php`:
 
-home(): Displays the Home page (pages.home).
-
-about(): Displays the About page containing the company's history, mission, and vision (pages.about).
-
-services(): Displays the list of services offered by the company (pages.services).
-
-contact(): Displays the Contact page with the contact form and company information (pages.contact).
+* `home()`: Displays the Home page (`pages.home`).
+* `about()`: Displays the About page containing the company's history, mission, and vision (`pages.about`).
+* `services()`: Displays the list of services offered by the company (`pages.services`).
+* `contact()`: Displays the Contact page with the contact form and company information (`pages.contact`).
 
 ---
 
-7. Blade Templating Engine
-What is Blade?
+## 7. Blade Templating Engine
+
+### What is Blade?
 Blade is Laravel's built-in templating engine that enables developers to create reusable layouts and components while keeping HTML code organized.
 
-Key Features
-Blade Layouts: Shared templates that provide a common structure for all pages.
+### Key Features
+* **Blade Layouts:** Shared templates that provide a common structure for all pages.
+* **Blade Components:** Reusable interface elements such as the navigation bar and footer.
+* **Blade Directives:**
+  * `@extends('layouts.app')`
+  * `@section('content')`
+  * `@yield('content')`
+  * `@include('components.navbar')`
+  * `@include('components.footer')`
 
-Blade Components: Reusable interface elements such as the navigation bar and footer.
-
-Blade Directives:
-
-@extends('layouts.app')
-
-@section('content')
-
-@yield('content')
-
-@include('components.navbar')
-
-@include('components.footer')
-
-Sample Layout (resources/views/layouts/app.blade.php)
-
+### Sample Layout (`resources/views/layouts/app.blade.php`)
+```blade
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Company Profile')</title>
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen">
 
@@ -139,20 +133,17 @@ Sample Layout (resources/views/layouts/app.blade.php)
 
 </body>
 </html>
+```
+
 ---
 
-8. Laravel Folder Structure
-app/: Contains application logic including Controllers, Models, and Middleware.
-
-routes/: Stores all application route definitions such as web.php.
-
-resources/: Contains Blade templates, CSS, JavaScript, and other frontend resources.
-
-public/: Stores publicly accessible assets including CSS, JavaScript, images, and index.php.
-
-bootstrap/: Contains framework bootstrap files and cache configuration.
-
-config/: Contains configuration files for application services and database connections.
+## 8. Laravel Folder Structure
+* `app/`: Contains application logic including Controllers, Models, and Middleware.
+* `routes/`: Stores all application route definitions such as `web.php`.
+* `resources/`: Contains Blade templates, CSS, JavaScript, and other frontend resources.
+* `public/`: Stores publicly accessible assets including CSS, JavaScript, images, and `index.php`.
+* `bootstrap/`: Contains framework bootstrap files and cache configuration.
+* `config/`: Contains configuration files for application services and database connections.
 
 ### Screenshots
 
@@ -166,49 +157,58 @@ config/: Contains configuration files for application services and database conn
 ![Controller](screenshots/controller.png)
 ![Layout](screenshots/layout.png)
 
-10. Problems Encountered
-Problem 1: Database Session Exception
-Issue: The application displayed the error SQLSTATE[HY000]: General error: 1 no such table: sessions because the required session table had not yet been created.
+---
 
-Problem 2: Unstyled HTML Output
-Issue: Page content appeared outside the website layout because it was placed outside the @section('content') and @endsection directives.
+## 10. Problems Encountered
 
-Problem 3: Missing PHP Extensions
-Issue: Laravel could not connect to SQLite because the pdo_sqlite and sqlite3 extensions were disabled.
+**Problem 1: Database Session Exception**
+Issue: The application displayed the error `SQLSTATE[HY000]: General error: 1 no such table: sessions` because the required session table had not yet been created.
 
-11. Solutions
-Solution 1
-Executed the php artisan migrate command to generate the required database tables.
+**Problem 2: Unstyled HTML Output**
+Issue: Page content appeared outside the website layout because it was placed outside the `@section('content')` and `@endsection` directives.
 
-Solution 2
-Placed all page content inside the @section('content') block so it inherited the master layout correctly.
+**Problem 3: Missing PHP Extensions**
+Issue: Laravel could not connect to SQLite because the `pdo_sqlite` and `sqlite3` extensions were disabled.
 
-Solution 3
-Enabled the extension=pdo_sqlite and extension=sqlite3 directives inside C:\php\php.ini and restarted the web server.
+---
 
-12. Reflection
-1. Learning Laravel MVC
+## 11. Solutions
+
+**Solution 1**
+Executed the `php artisan migrate` command to generate the required database tables.
+
+**Solution 2**
+Placed all page content inside the `@section('content')` block so it inherited the master layout correctly.
+
+**Solution 3**
+Enabled the `extension=pdo_sqlite` and `extension=sqlite3` directives inside `C:\php\php.ini` and restarted the web server.
+
+---
+
+## 12. Reflection
+
+**1. Learning Laravel MVC**
 This project helped me understand how Laravel organizes applications using the MVC architecture. Separating the application into Models, Views, and Controllers made the project easier to develop and maintain.
 
-2. Understanding the Request Flow
+**2. Understanding the Request Flow**
 I learned how Laravel receives a request, processes it through routing, executes the appropriate controller method, and renders a Blade template before sending the final response to the browser.
 
-3. Benefits of Blade Templates
-Using reusable layouts and components such as app.blade.php, navbar.blade.php, and footer.blade.php reduced duplicate code and made updating the website much easier.
+**3. Benefits of Blade Templates**
+Using reusable layouts and components such as `app.blade.php`, `navbar.blade.php`, and `footer.blade.php` reduced duplicate code and made updating the website much easier.
 
-4. Challenges Encountered
+**4. Challenges Encountered**
 The project introduced several technical challenges including missing database tables, disabled PHP extensions, and layout rendering issues. Solving these problems improved my troubleshooting and debugging skills.
 
-5. Overall Experience
+**5. Overall Experience**
 Overall, this project strengthened my knowledge of Laravel Routing, Controllers, Blade Templates, and MVC Architecture. It also improved my confidence in building structured and maintainable web applications using industry-standard development practices.
 
 ---
 
-References
-Laravel Documentation. (2026). Laravel – The PHP Framework for Web Artisans. https://laravel.com/docs
+## References
+Laravel Documentation. (2026). *Laravel – The PHP Framework for Web Artisans*. https://laravel.com/docs
 
-PHP Documentation. (2026). PHP Manual: PHP Data Objects (PDO). https://www.php.net/manual/en/book.pdo.php
+PHP Documentation. (2026). *PHP Manual: PHP Data Objects (PDO)*. https://www.php.net/manual/en/book.pdo.php
 
-Tailwind CSS Documentation. (2026). Tailwind CSS Documentation. https://tailwindcss.com/docs
+Tailwind CSS Documentation. (2026). *Tailwind CSS Documentation*. https://tailwindcss.com/docs
 
-MDN Web Docs. (2026). An overview of HTTP requests and responses. https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+MDN Web Docs. (2026). *An overview of HTTP requests and responses*. https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
