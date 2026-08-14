@@ -155,67 +155,42 @@ bootstrap/: Contains framework bootstrap files and cache configuration.
 config/: Contains configuration files for application services and database connections.
 
 ---
+ 9. screenshots
+### Screenshot 1
+**Home Page**
+![Home Page](<screenshots/Screenshot 2026-08-14 203118.png>)
 
-## 9. Screenshots
+### Screenshot 2
+**About Page**
+![About Page](<screenshots/Screenshot 2026-08-14 203139.png>)
 
-### Screenshot 1 – Home Page
-Displays the landing page of the Company Profile Website, featuring the company introduction, hero section, and navigation menu.
+### Screenshot 3
+**Services Page**
+![Services Page](<screenshots/Screenshot 2026-08-14 203149.png>)
 
-![Home Page](screenshots/Screenshot 2026-08-14 203118.png)
----
+### Screenshot 4
+**Contact Page**
+![Contact Page](<screenshots/Screenshot 2026-08-14 203158.png>)
 
-### Screenshot 2 – About Page
-Shows the company's background, mission, vision, and core values to help visitors understand the organization's purpose.
+### Screenshot 5
+**Navigation Bar**
+![Navigation Bar](<screenshots/Screenshot 2026-08-14 204309.png>)
 
-![About Page](screenshots/Screenshot 2026-08-14 203139.png)
+### Screenshot 6
+**Footer Component**
+![Footer Component](<screenshots/Screenshot 2026-08-14 204349.png>)
 
----
+### Screenshot 7
+**Route Definitions**
+![Route Definitions](<screenshots/Screenshot 2026-08-14 204632.png>)
 
-### Screenshot 3 – Services Page
-Displays the list of services offered by the company along with brief descriptions of each service.
+### Screenshot 8
+**Controller Implementation**
+![Controller Implementation](<screenshots/Screenshot 2026-08-14 205004.png>)
 
-![Services Page](screenshots/Screenshot 2026-08-14 203149.png)
----
-
-### Screenshot 4 – Contact Page
-Shows the contact form and company contact information, allowing visitors to send inquiries and find communication details.
-
-![Contact Page](screenshots/Screenshot 2026-08-14 203158.png)
-
----
-
-### Screenshot 5 – Navigation Bar
-Displays the reusable navigation component used across all pages for seamless site navigation.
-
-![Navigation Bar](screenshots/Screenshot 2026-08-14 204309.png)
-
----
-
-### Screenshot 6 – Footer Component
-Shows the reusable footer containing company information, copyright notice, and additional links.
-
-![Footer Component](screenshots/Screenshot 2026-08-14 204349.png)
-
----
-
-### Screenshot 7 – Route Definitions
-Illustrates the route configuration defined in `routes/web.php`, mapping URLs to controller methods.
-
-![Route Definitions](screenshots/Screenshot 2026-08-14 204632.png)
-
----
-
-### Screenshot 8 – Controller Implementation
-Displays the implementation of the `CompanyController`, which processes requests and returns the appropriate Blade views.
-
-![Controller Implementation](screenshots/Screenshot 2026-08-14 205004.png)
-
----
-
-### Screenshot 9 – Blade Views Structure
-Shows the organization of Blade template files inside the `resources/views` directory, demonstrating the project's layout structure.
-
-![Blade Views Structure](screenshots/Screenshot 2026-08-14 204533.png)
+### Screenshot 9
+**Blade Views Structure**
+![Blade Views Structure](<screenshots/Screenshot 2026-08-14 204533.png>)
 
 ---
 
