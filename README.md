@@ -154,17 +154,16 @@ bootstrap/: Contains framework bootstrap files and cache configuration.
 
 config/: Contains configuration files for application services and database connections.
 
----
 ![Home Page](screenshots/home.png)
 ![About Page](screenshots/about.png)
 ![Services Page](screenshots/services.png)
 ![Contact Page](screenshots/contact.png)
-![Navigation Bar](screenshots/navigation%20bar.png)
+![Navigation Bar](screenshots/navigation-bar.png)
 ![Footer](screenshots/footer.png)
 ![Route](screenshots/route.png)
 ![Controller](screenshots/controller.png)
 ![Layout](screenshots/layout.png)
----
+
 
 10. Problems Encountered
 Problem 1: Database Session Exception
