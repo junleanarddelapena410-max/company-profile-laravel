@@ -154,15 +154,16 @@ bootstrap/: Contains framework bootstrap files and cache configuration.
 
 config/: Contains configuration files for application services and database connections.
 
-![Home Page](screenshots/home.png)
-![About Page](screenshots/about.png)
-![Services Page](screenshots/services.png)
-![Contact Page](screenshots/contact.png)
-![Navigation Bar](screenshots/navigation-bar.png)
-![Footer](screenshots/footer.png)
-![Route](screenshots/route.png)
-![Controller](screenshots/controller.png)
-![Layout](screenshots/layout.png)
+### Screenshots
+[![Home Page](screenshots/home.png)](screenshots/home.png)
+[![About Page](screenshots/about.png)](screenshots/about.png)
+[![Services Page](screenshots/services.png)](screenshots/services.png)
+[![Contact Page](screenshots/contact.png)](screenshots/contact.png)
+[![Navigation Bar](screenshots/navigation-bar.png)](screenshots/navigation-bar.png)
+[![Footer](screenshots/footer.png)](screenshots/footer.png)
+[![Route](screenshots/route.png)](screenshots/route.png)
+[![Controller](screenshots/controller.png)](screenshots/controller.png)
+[![Layout](screenshots/layout.png)](screenshots/layout.png)
 
 
 10. Problems Encountered
