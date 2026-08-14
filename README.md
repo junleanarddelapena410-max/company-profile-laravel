@@ -164,7 +164,6 @@ config/: Contains configuration files for application services and database conn
 ![Route](screenshots/route.png)
 ![Controller](screenshots/controller.png)
 ![Layout](screenshots/layout.png)
-
 10. Problems Encountered
 Problem 1: Database Session Exception
 Issue: The application displayed the error SQLSTATE[HY000]: General error: 1 no such table: sessions because the required session table had not yet been created.
