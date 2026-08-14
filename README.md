@@ -155,6 +155,7 @@ bootstrap/: Contains framework bootstrap files and cache configuration.
 config/: Contains configuration files for application services and database connections.
 
 ### Screenshots
+
 ![Home Page](screenshots/home.png)
 ![About Page](screenshots/about.png)
 ![Services Page](screenshots/services.png)
