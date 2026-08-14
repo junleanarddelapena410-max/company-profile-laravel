@@ -1,64 +1,98 @@
-Markdown
+# 1. Company Profile Website - TechCorp Solutions
 
-# Company Profile Website - TechCorp Solutions
+---
 
-## Introduction
+# 2. Introduction
 
 ### What is a Company Profile Website?
-A Company Profile Website is an official, professional digital portal that presents a business's identity, history, offerings, values, and contact channels to potential clients and partners online.
+
+A Company Profile Website is an official online platform that introduces a business to potential clients, customers, and partners. It presents important information such as the company's background, services, mission, vision, and contact details. It also serves as a digital representation of the business and helps establish credibility in the online market.
 
 ### Why Businesses Need One
-In the modern digital landscape, a website acts as the central hub for a company's brand identity. It establishes credibility, builds consumer trust, enables 24/7 client communication, and showcases services or products to a global target market.
+
+A company profile website helps organizations build trust with customers by providing accurate and accessible information. It is available 24/7, allowing visitors to learn about the company, explore its services, and contact the business anytime. It also strengthens the company's online presence and improves brand recognition.
 
 ### Purpose of the Project
-The primary purpose of this project is to implement a multi-page enterprise website using Laravel's Model-View-Controller (MVC) architecture. It demonstrates practical knowledge of URL routing, server-side controllers, Blade layout inheritance, and reusable front-end components within a structured PHP web framework.
+
+The purpose of this project is to develop a multi-page Company Profile Website using the Laravel framework and its Model-View-Controller (MVC) architecture. The project demonstrates the implementation of Laravel routing, controllers, Blade templating, reusable components, and organized project structure while applying best practices in web development.
 
 ---
 
-## Objectives
-* Configured application routes using Laravel Routing (`routes/web.php`).
-* Developed `CompanyController` to handle client request execution and return view layouts.
-* Constructed reusable layout structures and component views (`app.blade.php`, `navbar`, `footer`).
-* Built dynamic, styled content pages for Home, About, Services, and Contact sections.
-* Managed project source code with Git version control adhering to structured commit practices.
-* Formatted complete project documentation adhering to clean Markdown formatting guidelines.
+# 3. Objectives
+
+After completing this project, I was able to:
+
+- Configure application routes using Laravel Routing (`routes/web.php`).
+- Develop a `CompanyController` to process user requests.
+- Create reusable Blade layouts and components.
+- Build dynamic pages for Home, About, Services, and Contact.
+- Apply Laravel's MVC architecture in a real-world project.
+- Organize project files according to Laravel's directory structure.
+- Document the project using proper Markdown formatting.
 
 ---
 
-## MVC Architecture
+# 4. MVC Architecture
 
 ### What is MVC?
-MVC stands for Model-View-Controller, an architectural pattern that divides application responsibilities into three distinct layers: Data Management (Model), Design & Presentation (View), and Application Logic (Controller).
 
-### Why Laravel Uses MVC?
-Laravel incorporates the MVC architectural pattern to enforce organized code bases, decouple business logic from user interfaces, and streamline request lifecycle management across modern web applications.
+Model-View-Controller (MVC) is a software architecture that separates an application into three main components: the Model, the View, and the Controller. This separation improves code organization, maintainability, and scalability.
 
-### Advantages of MVC in Software Development
-* **Separation of Concerns:** Business logic and template presentation remain isolated from each other.
-* **Maintainability & Scalability:** Updating design components does not break underlying backend routing or controllers.
-* **Team Collaboration:** Front-end design updates can proceed simultaneously with backend API or controller logic development.
+### Why Laravel Uses MVC
+
+Laravel uses the MVC architecture to organize application logic efficiently. It separates business logic from the user interface, making applications easier to develop, test, and maintain.
+
+### Advantages of MVC
+
+1. **Separation of Concerns**
+   - Business logic remains independent from the user interface.
+
+2. **Maintainability**
+   - Changes to one component have minimal impact on other parts of the application.
+
+3. **Scalability**
+   - Applications can be expanded without significantly modifying the existing structure.
+
+4. **Team Collaboration**
+   - Front-end and back-end developers can work independently on different parts of the project.
 
 ### Request Flow Diagram
 
-Browser │ ▼ Route (routes/web.php) │ ▼ Controller
-(CompanyController.php) │ ▼ Blade View (resources/views/pages/*) │ ▼
+```
+Browser
+   │
+   ▼
+Route (`routes/web.php`)
+   │
+   ▼
+Controller (`CompanyController.php`)
+   │
+   ▼
+Blade View (`resources/views/pages/*`)
+   │
+   ▼
 Response to Browser
+```
 
 ---
 
-## Laravel Routing
+# 5. Laravel Routing
 
 ### What is Routing?
-Routing is the process of defining valid URL entry points for incoming HTTP requests and mapping them to specific executable code, such as controller actions or anonymous functions.
+
+Routing defines how incoming HTTP requests are directed to specific controller methods. It allows Laravel to determine which page or function should be executed when a user visits a particular URL.
 
 ### Key Concepts
-* **GET Requests:** HTTP request methods utilized specifically to fetch and render data or web pages from the web server.
-* **Route Definitions:** Declarations inside `routes/web.php` that map explicit URI paths (e.g., `/about`) to target controllers and methods.
-* **Named Routes:** Programmatic identifiers assigned to routes using the `->name()` method, allowing flexible URL generation within Blade templates.
 
-### Route Definitions Code Snippet (`routes/web.php`)
+- **GET Requests** – Used to retrieve and display web pages.
+- **Route Definitions** – Map URLs to controller methods.
+- **Named Routes** – Allow routes to be referenced easily throughout the application.
+
+### Route Definitions (`routes/web.php`)
+
 ```php
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 
@@ -66,59 +100,57 @@ Route::get('/', [CompanyController::class, 'home'])->name('home');
 Route::get('/about', [CompanyController::class, 'about'])->name('about');
 Route::get('/services', [CompanyController::class, 'services'])->name('services');
 Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
+```
 
-Controllers
+---
 
-Purpose & Benefits of Controllers
+# 6. Controllers
 
-Controllers serve as the core request handlers. Instead of writing
-inline logic directly inside route files, controllers centralize
-application workflow, process user input, interact with data services,
-and determine which view response to return.
+### Purpose of Controllers
 
-Controller Methods
+Controllers process incoming requests, execute the required application logic, and return the appropriate Blade view to the user. This keeps routing files clean and organizes application logic into reusable classes.
 
-Inside app/Http/Controllers/CompanyController.php:
+### Controller Methods
 
-home(): Renders and returns the primary homepage view
-(pages.home).
+1. **`home()`**
+   - Displays the Home page.
 
-about(): Renders the company history, mission, and vision view
-(pages.about).
+2. **`about()`**
+   - Displays the About page containing the company's history, mission, and vision.
 
-services(): Processes and renders the company service matrix view
-(pages.services).
+3. **`services()`**
+   - Displays the list of services offered by the company.
 
-contact(): Returns the interactive contact form view
-(pages.contact).
+4. **`contact()`**
+   - Displays the Contact page with the contact form and company information.
 
-Blade Templating Engine
+---
 
-Key Features
+# 7. Blade Templating Engine
 
-Blade Layouts: Core template structures that establish shared
-HTML structures (<!DOCTYPE html>, <head>, script links) across
-multiple views.
+### What is Blade?
 
-Blade Components: Modular, reusable UI fragments such as
-navigation bars and footers included across different pages.
+Blade is Laravel's built-in templating engine that enables developers to create reusable layouts and components while keeping HTML code organized.
 
-Directives Used:
+### Key Features
 
-@extends('layouts.app'): Specifies the master parent template
-to inherit.
+1. **Blade Layouts**
+   - Shared templates that provide a common structure for all pages.
 
-@section('content') ... @endsection: Defines page-specific
-content blocks.
+2. **Blade Components**
+   - Reusable interface elements such as the navigation bar and footer.
 
-@yield('content'): Acts as a placeholder inside master layouts
-to inject child section views.
+3. **Blade Directives**
 
-@include('components.navbar'): Embeds a modular component view
-inline.
+- `@extends('layouts.app')`
+- `@section('content')`
+- `@yield('content')`
+- `@include('components.navbar')`
+- `@include('components.footer')`
 
-Sample Code Snippet (resources/views/layouts/app.blade.php)
+### Sample Layout (`resources/views/layouts/app.blade.php`)
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,156 +160,166 @@ Sample Code Snippet (resources/views/layouts/app.blade.php)
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-slate-100 flex flex-col min-h-screen">
-    @include('components.navbar')
-    <main class="flex-grow">
-        @yield('content')
-    </main>
-    @include('components.footer')
+
+@include('components.navbar')
+
+<main class="flex-grow">
+    @yield('content')
+</main>
+
+@include('components.footer')
+
 </body>
 </html>
+```
 
-Laravel Folder Structure
+---
 
-app/: Contains core code logic, including Controllers
-(CompanyController.php), Middleware, and Models.
+# 8. Laravel Folder Structure
 
-routes/: Holds all route definitions (such as web.php for
-HTTP browser routes).
+### 1. `app/`
 
-resources/: Houses raw front-end components, including Blade
-templates (views/pages/, views/components/, views/layouts/),
-CSS, and JavaScript.
+Contains application logic including Controllers, Models, and Middleware.
 
-public/: Stores accessible server assets like compiled CSS,
-JavaScript scripts, uploaded media, and index.php.
+### 2. `routes/`
 
-bootstrap/: Contains execution bootstrapper scripts and
-framework performance optimization caches.
+Stores all application route definitions such as `web.php`.
 
-config/: Holds configuration settings for database
-connections, application services, and mailers.
+### 3. `resources/`
 
-Screenshots
+Contains Blade templates, CSS, JavaScript, and other frontend resources.
 
-1. Home Page
+### 4. `public/`
 
-Features the primary hero header, value propositions, and key
-highlights.
+Stores publicly accessible assets including CSS, JavaScript, images, and `index.php`.
 
-2. About Page
+### 5. `bootstrap/`
 
-Displays company history, mission, and vision values.
+Contains framework bootstrap files and cache configuration.
 
-3. Services Page
+### 6. `config/`
 
-Grid interface highlighting core service solutions offered.
+Contains configuration files for application services and database connections.
 
-4. Contact Page
+---
 
-Interactive form layout along with corporate address details.
+# 9. Screenshots
 
-5. Navigation Bar
+### Screenshot 1
+**Home Page**
 
-Reusable navigation component supporting internal route links.
+Displays the landing page with the hero section and company highlights.
 
-6. Footer Component
+### Screenshot 2
+**About Page**
 
-Global footer component containing dynamic copyright, contact channels,
-and developer social links.
+Shows the company's history, mission, and vision.
 
-7. Route Definitions
+### Screenshot 3
+**Services Page**
 
-routes/web.php configuration mapping paths to controller methods.
+Displays the services provided by the company.
 
-8. Controller Implementation
+### Screenshot 4
+**Contact Page**
 
-CompanyController.php logic returning Blade view instances.
+Shows the contact form and company contact information.
 
-9. Blade Layout & Views Structure
+### Screenshot 5
+**Navigation Bar**
 
-File hierarchy showing organized views inside resources/views/pages/.
+Reusable navigation component shared across all pages.
 
-Problems Encountered
+### Screenshot 6
+**Footer Component**
 
-Database Session Exception
-(SQLSTATE[HY000]: General error: 1 no such table: sessions)
+Reusable footer containing company information and social links.
 
-Issue: Upon launching php artisan serve, requests failed
-because database session drivers required SQLite tables that had
-not been generated yet.
+### Screenshot 7
+**Route Definitions**
 
-Unstyled HTML Output Rendering Outside Main Layout
+Shows the routing configuration inside `routes/web.php`.
 
-Issue: Pasting section content outside @section('content')
-and @endsection directives caused content to render as
-unstyled raw text above the layout.
+### Screenshot 8
+**Controller Implementation**
 
-Missing PHP Extensions (pdo_sqlite)
+Shows the implementation of `CompanyController.php`.
 
-Issue: Local PHP environments initially blocked execution
-due to disabled SQLite drivers inside the global php.ini setup
-file.
+### Screenshot 9
+**Blade Views Structure**
 
-Solutions
+Displays the organization of files inside `resources/views/pages/`.
 
-Database Migration Execution: Executed php artisan migrate in
-the terminal to initialize missing session tables inside
-database.sqlite.
+---
 
-Directive Correction: Wrapped all page view code strictly
-between @section('content') and @endsection tags to enforce
-inheritance from app.blade.php.
+# 10. Problems Encountered
 
-PHP Configuration Update: Un-commented extension=pdo_sqlite
-and extension=sqlite3 directives inside C:\php\php.ini to
-activate database extensions.
+### Problem 1
+**Database Session Exception**
 
-Reflection
+**Issue:**
 
-Building a multi-page web application using Laravel's MVC architecture
-provided valuable hands-on experience with modern client-server
-workflows. Prior to this project, rendering individual pages often
-involved redundant HTML code, embedded PHP tags, and scattered script
-files. Through Laravel, I experienced how separation of concerns
-establishes clean, maintainable software architectures.
+The application displayed the error `SQLSTATE[HY000]: General error: 1 no such table: sessions` because the required session table had not yet been created.
 
-Dividing the application into Models, Views, and Controllers clarified
-the client-server request lifecycle. When a user requests a URL,
-Laravel's routing system interceptively maps the request to
-CompanyController. The controller processes the action and retrieves
-the appropriate Blade template. The Blade templating engine then renders
-the final HTML layout sent to the user's browser. This flow keeps
-backend routing rules, controller processing, and HTML UI presentation
-completely separated, making the code clean and structured.
+### Problem 2
+**Unstyled HTML Output**
 
-The principle of separation of concerns became clearer when implementing
-Blade layout inheritance. By creating app.blade.php with modular
-components like navbar.blade.php and footer.blade.php, common
-navigation elements no longer had to be duplicated across every
-individual page. Modifying navigation links or footer social links in a
-single component file instantly updates the entire website. This modular
-structure significantly speeds up development while reducing duplicate
-code.
+**Issue:**
 
-This architecture scales smoothly to enterprise systems handling high
-transaction volumes. In larger applications, controllers remain
-lightweight by delegating database operations to Eloquent ORM models and
-offloading background workflows to dedicated service layers.
-Understanding Laravel routing, controller design, and Blade views
-establishes a solid foundation for building maintainable web
-applications using industry-standard practices.
+Page content appeared outside the website layout because it was placed outside the `@section('content')` and `@endsection` directives.
 
-References
+### Problem 3
+**Missing PHP Extensions**
 
-Laravel Documentation. (2026). Laravel - The PHP Framework for Web
-Artisans. https://laravel.com/docs
+**Issue:**
 
-PHP Documentation. (2026). PHP Manual: PHP Data Objects (PDO).
-https://www.php.net/manual/en/book.pdo.php
+Laravel could not connect to SQLite because the `pdo_sqlite` and `sqlite3` extensions were disabled.
 
-Tailwind CSS Documentation. (2026). Tailwind CSS - Rapidly build
-modern websites without ever leaving your HTML.
-https://tailwindcss.com/docs
+---
 
-MDN Web Docs. (2026). An overview of HTTP requests and responses.
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+# 11. Solutions
+
+### Solution 1
+
+Executed the `php artisan migrate` command to generate the required database tables.
+
+### Solution 2
+
+Placed all page content inside the `@section('content')` block so it inherited the master layout correctly.
+
+### Solution 3
+
+Enabled the `extension=pdo_sqlite` and `extension=sqlite3` directives inside `C:\php\php.ini` and restarted the web server.
+
+---
+
+# 12. Reflection
+
+### 1. Learning Laravel MVC
+
+This project helped me understand how Laravel organizes applications using the MVC architecture. Separating the application into Models, Views, and Controllers made the project easier to develop and maintain.
+
+### 2. Understanding the Request Flow
+
+I learned how Laravel receives a request, processes it through routing, executes the appropriate controller method, and renders a Blade template before sending the final response to the browser.
+
+### 3. Benefits of Blade Templates
+
+Using reusable layouts and components such as `app.blade.php`, `navbar.blade.php`, and `footer.blade.php` reduced duplicate code and made updating the website much easier.
+
+### 4. Challenges Encountered
+
+The project introduced several technical challenges including missing database tables, disabled PHP extensions, and layout rendering issues. Solving these problems improved my troubleshooting and debugging skills.
+
+### 5. Overall Experience
+
+Overall, this project strengthened my knowledge of Laravel Routing, Controllers, Blade Templates, and MVC Architecture. It also improved my confidence in building structured and maintainable web applications using industry-standard development practices.
+
+---
+
+# 13. References
+
+1. Laravel Documentation (2026). *Laravel – The PHP Framework for Web Artisans.*
+2. PHP Documentation (2026). *PHP Manual: PHP Data Objects (PDO).*
+3. Tailwind CSS Documentation (2026). *Tailwind CSS Documentation.*
+4. MDN Web Docs (2026). *HTTP Requests and Responses.*
