@@ -156,34 +156,68 @@ config/: Contains configuration files for application services and database conn
 
 ---
 
-## 9 Screenshots
+## 9. Screenshots
 
-### Home Page
-![Home Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203118.png?raw=true)
+### Screenshot 1 – Home Page
+Displays the landing page of the Company Profile Website, featuring the company introduction, hero section, and navigation menu.
 
-### About Page
-![About Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203139.png?raw=true)
+![Home Page](screenshots/Screenshot%202026-08-14%20203118.png)
 
-### Services Page
-![Services Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203149.png?raw=true)
+---
 
-### Contact Page
-![Contact Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203158.png?raw=true)
+### Screenshot 2 – About Page
+Shows the company's background, mission, vision, and core values to help visitors understand the organization's purpose.
 
-### Navigation Bar
-![Navigation Bar](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204309.png?raw=true)
+![About Page](screenshots/Screenshot%202026-08-14%20203139.png)
 
-### Footer Component
-![Footer Component](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204349.png?raw=true)
+---
 
-### Route Definitions
-![Route Definitions](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204632.png?raw=true)
+### Screenshot 3 – Services Page
+Displays the list of services offered by the company along with brief descriptions of each service.
 
-### Controller Implementation
-![Controller Implementation](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20205004.png?raw=true)
+![Services Page](screenshots/Screenshot%202026-08-14%20203149.png)
 
-### Blade Views Structure
-![Blade Views Structure](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204533.png?raw=true)
+---
+
+### Screenshot 4 – Contact Page
+Shows the contact form and company contact information, allowing visitors to send inquiries and find communication details.
+
+![Contact Page](screenshots/Screenshot%202026-08-14%20203158.png)
+
+---
+
+### Screenshot 5 – Navigation Bar
+Displays the reusable navigation component used across all pages for seamless site navigation.
+
+![Navigation Bar](screenshots/Screenshot%202026-08-14%20204309.png)
+
+---
+
+### Screenshot 6 – Footer Component
+Shows the reusable footer containing company information, copyright notice, and additional links.
+
+![Footer Component](screenshots/Screenshot%202026-08-14%20204349.png)
+
+---
+
+### Screenshot 7 – Route Definitions
+Illustrates the route configuration defined in `routes/web.php`, mapping URLs to controller methods.
+
+![Route Definitions](screenshots/Screenshot%202026-08-14%20204632.png)
+
+---
+
+### Screenshot 8 – Controller Implementation
+Displays the implementation of the `CompanyController`, which processes requests and returns the appropriate Blade views.
+
+![Controller Implementation](screenshots/Screenshot%202026-08-14%20205004.png)
+
+---
+
+### Screenshot 9 – Blade Views Structure
+Shows the organization of Blade template files inside the `resources/views` directory, demonstrating the project's layout structure.
+
+![Blade Views Structure](screenshots/Screenshot%202026-08-14%20204533.png)
 ---
 
 10. Problems Encountered
