@@ -156,53 +156,34 @@ config/: Contains configuration files for application services and database conn
 
 ---
 
-## 9 screenshots
+## Screenshots
 
-### Screenshot 1
-**Home Page**
+### Home Page
+![Home Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203118.png?raw=true)
 
-![Home Page](screenshots/Screenshot%202026-08-14%20203118.png)
+### About Page
+![About Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203139.png?raw=true)
 
-### Screenshot 2
-**About Page**
+### Services Page
+![Services Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203149.png?raw=true)
 
-![About Page](screenshots/Screenshot%202026-08-14%20203139.png)
+### Contact Page
+![Contact Page](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20203158.png?raw=true)
 
-### Screenshot 3
-**Services Page**
+### Navigation Bar
+![Navigation Bar](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204309.png?raw=true)
 
-![Services Page](screenshots/Screenshot%202026-08-14%20203149.png)
+### Footer Component
+![Footer Component](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204349.png?raw=true)
 
-### Screenshot 4
-**Contact Page**
+### Route Definitions
+![Route Definitions](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204632.png?raw=true)
 
-![Contact Page](screenshots/Screenshot%202026-08-14%20203158.png)
+### Controller Implementation
+![Controller Implementation](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20205004.png?raw=true)
 
-### Screenshot 5
-**Navigation Bar**
-
-![Navigation Bar](screenshots/Screenshot%202026-08-14%20204309.png)
-
-### Screenshot 6
-**Footer Component**
-
-![Footer Component](screenshots/Screenshot%202026-08-14%20204349.png)
-
-### Screenshot 7
-**Route Definitions**
-
-![Route Definitions](screenshots/Screenshot%202026-08-14%20204632.png)
-
-### Screenshot 8
-**Controller Implementation**
-
-![Controller Implementation](screenshots/Screenshot%202026-08-14%20205004.png)
-
-### Screenshot 9
-**Blade Views Structure**
-
-![Blade Views Structure](screenshots/Screenshot%202026-08-14%20204533.png)
-
+### Blade Views Structure
+![Blade Views Structure](https://github.com/junleanarddelapena410-max/company-profile-laravel/blob/main/screenshots/Screenshot%202026-08-14%20204533.png?raw=true)
 ---
 
 10. Problems Encountered
